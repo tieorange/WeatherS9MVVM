@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.MatteoBattilana:WeatherView-2.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/WeatherView-2.0.2.aar/d117bd304727d4dca8171e3d21243f87/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/WeatherView-2.0.2.aar/d117bd304727d4dca8171e3d21243f87/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.MatteoBattilana/WeatherView/2.0.2/f9f7271e72a7850bdc4ee639620888731fdef8cf/WeatherView-2.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

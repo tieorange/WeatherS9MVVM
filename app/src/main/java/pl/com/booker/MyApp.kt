@@ -2,6 +2,7 @@ package pl.com.booker
 
 import android.content.Context
 import android.content.res.Resources
+import android.net.TrafficStats
 import android.os.StrictMode
 import android.os.StrictMode.ThreadPolicy.Builder
 import android.os.StrictMode.VmPolicy
@@ -18,6 +19,7 @@ import timber.log.Timber
 class MyApp : MultiDexApplication() {
     override fun onCreate() {
         super.onCreate()
+        TrafficStats.setThreadStatsTag(1000)
         enableStrictMode()
 
         instance = this

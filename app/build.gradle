@@ -8,7 +8,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "pl.com.booker.booker"
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -71,6 +71,8 @@ kapt {
 }
 
 dependencies {
+    implementation 'com.github.AhmadNemati:WindView:1.1.1'
+    implementation 'com.github.MatteoBattilana:WeatherView:2.0.2'
     debugCompile 'com.readystatesoftware.chuck:library:1.1.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation('com.afollestad.material-dialogs:core:0.9.4.5') { exclude module: 'support-v13' }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
     >
 
     <data>
@@ -11,12 +12,88 @@
 
     </data>
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="16dp">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView2"
+            style="@style/title"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Wewnątrz:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/title"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Zewnątrz:"
+            app:layout_constraintBottom_toTopOf="@+id/windView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="1.0"/>
+
+        <com.github.ahmadnemati.wind.WindView
+            android:id="@+id/windView"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_marginRight="8dp"
+            app:barometerTickSpacing="9dp"
+            app:bigPoleX="38dp"
+            app:labelFontSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:numericFontSize="25sp"
+            app:poleBottomY="98dp"
+            app:pressureLineY="73dp"
+            app:pressureTextX="12dp"
+            app:pressureTextY="4dp"
+            app:smallPoleX="75dp"
+            app:windTextX="10dp"
+            app:windTextY="29dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="304dp"
             android:layout_height="wrap_content"
-            android:text="@{viewModel.temperature}"/>
-    </LinearLayout>
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <TextView
+                style="@style/insideRoomText"
+                android:text="@{String.format(@string/temperatura_format, viewModel.temperatura.get())}"
+                tools:text="Temperatura: 4* C"/>
+
+            <TextView
+                style="@style/insideRoomText"
+                android:text="@{String.format(@string/wilgotnosc_format, viewModel.wilogtnosc.get())}"
+                tools:text="Wilgotnosc: 56"/>
+
+            <TextView
+                style="@style/insideRoomText"
+                android:text="@{String.format(@string/cisnienie_format, viewModel.cisnienie.get())}"
+                tools:text="Cisnienie: 99806"/>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
 </layout>

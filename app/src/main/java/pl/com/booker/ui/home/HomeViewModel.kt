@@ -20,7 +20,9 @@ class HomeViewModel
 constructor(@ActivityContext private val context: Context) : RxBaseViewModel<HomeMvvm.View>(),
                                                              HomeMvvm.ViewModel {
 
-    override val temperature = ObservableField<String>("0 6")
+    override val temperatura = ObservableField<String>("0")
+    override val wilogtnosc = ObservableField<String>("0")
+    override val cisnienie = ObservableField<String>("0")
 
     override fun attachView(view: HomeMvvm.View, savedInstanceState: Bundle?) {
         super.attachView(view, savedInstanceState)
@@ -32,13 +34,14 @@ constructor(@ActivityContext private val context: Context) : RxBaseViewModel<Hom
                 52.2239, 20.9940, object : CurrentWeatherCallback {
             override fun onSuccess(weather: CurrentWeather) {
                 val temp = weather.main.temp.toString()
-                temperature.set(temp)
+                temperatura.set(temp)
+                view.weatherFetched(weather)
+                return
             }
 
             override fun onFailure(throwable: Throwable) {
                 context.toast("Check your Internet connection")
             }
-
         }
         )
 

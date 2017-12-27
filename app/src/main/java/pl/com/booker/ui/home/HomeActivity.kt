@@ -5,6 +5,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import com.github.ahmadnemati.wind.enums.TrendType
+import com.kwabenaberko.openweathermaplib.models.currentweather.CurrentWeather
+import kotlinx.android.synthetic.main.activity_home.windView
 import pl.com.booker.R
 import pl.com.booker.databinding.ActivityHomeBinding
 import pl.com.booker.ui.base.BaseActivity
@@ -23,6 +26,17 @@ class HomeActivity
         //        setSupportActionBar(binding.appBarContainer.toolbar)
 
     }
+
+
+    override fun weatherFetched(weather: CurrentWeather) {
+        windView.pressure = weather.main.pressure.toFloat()
+        windView.pressureUnit = "in Hg"
+        windView.setWindSpeed(weather.wind.speed.toFloat())
+        windView.windSpeedUnit = "km/h"
+        windView.trendType = TrendType.UP
+        windView.start()
+    }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         super.onCreateOptionsMenu(menu)
