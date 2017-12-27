@@ -115,6 +115,7 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
     kapt "nz.bradcampbell:paperparcel-compiler:$paperParcelVersion"
+    implementation 'com.github.KwabenBerko:OpenWeatherMap-Android-Library:v1.1.1'
     releaseCompile 'com.readystatesoftware.chuck:library-no-op:1.1.0'
 }
 

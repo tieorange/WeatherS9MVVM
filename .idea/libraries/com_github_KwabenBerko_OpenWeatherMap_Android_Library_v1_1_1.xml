@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.github.KwabenBerko:OpenWeatherMap-Android-Library-v1.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/OpenWeatherMap-Android-Library-v1.1.1.aar/f18b1969f6d7ec63621ad7cadb658c05/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/OpenWeatherMap-Android-Library-v1.1.1.aar/f18b1969f6d7ec63621ad7cadb658c05/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -11,12 +11,15 @@ import android.support.annotation.LayoutRes
 import android.support.annotation.StringRes
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
+import pl.com.booker.BR
 import pl.com.booker.MyApp
 import pl.com.booker.injection.components.ActivityComponent
 import pl.com.booker.injection.components.DaggerActivityComponent
 import pl.com.booker.injection.modules.ActivityModule
 import pl.com.booker.ui.base.view.MvvmView
 import pl.com.booker.ui.base.viewmodel.MvvmViewModel
+import pl.com.booker.ui.base.viewmodel.NoOpViewModel
+import javax.inject.Inject
 
 /* Base class for Activities when using a view model with data binding.
  * This class provides the binding and the view model to the subclass. The
@@ -35,7 +38,7 @@ import pl.com.booker.ui.base.viewmodel.MvvmViewModel
 abstract class BaseActivity<B : ViewDataBinding, V : MvvmView, VM : MvvmViewModel<V>> : AppCompatActivity() {
 
     protected lateinit var binding: B
-//    @Inject protected lateinit var viewModel: VM
+    @Inject protected lateinit var viewModel: VM
 
     internal lateinit var activityComponent: ActivityComponent
         private set
@@ -43,7 +46,7 @@ abstract class BaseActivity<B : ViewDataBinding, V : MvvmView, VM : MvvmViewMode
     @CallSuper
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-//        viewModel.saveInstanceState(outState)
+        viewModel.saveInstanceState(outState)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,26 +59,24 @@ abstract class BaseActivity<B : ViewDataBinding, V : MvvmView, VM : MvvmViewMode
     }
 
 
-
     @CallSuper
     override fun onDestroy() {
         super.onDestroy()
-//        viewModel.detachView()
+        viewModel.detachView()
     }
 
     /* Sets the content view, creates the binding and attaches the view to the view model */
     protected fun setAndBindContentView(savedInstanceState: Bundle?, @LayoutRes layoutResID: Int) {
-//        setContentView(layoutResID)
         binding = DataBindingUtil.setContentView<B>(this, layoutResID)
-//        binding.setVariable(BR.viewModel, viewModel)
+        binding.setVariable(BR.viewModel, viewModel)
 
         try {
-//            @Suppress("UNCHECKED_CAST")
-//            viewModel.attachView(this as V, savedInstanceState)
+            @Suppress("UNCHECKED_CAST")
+            viewModel.attachView(this as V, savedInstanceState)
         } catch (e: ClassCastException) {
-//            if (viewModel !is NoOpViewModel<*>) {
-//                throw RuntimeException(javaClass.simpleName + " must implement MvvmView subclass as declared in " + viewModel.javaClass.simpleName)
-//            }
+            if (viewModel !is NoOpViewModel<*>) {
+                throw RuntimeException(javaClass.simpleName + " must implement MvvmView subclass as declared in " + viewModel.javaClass.simpleName)
+            }
         }
 
     }
