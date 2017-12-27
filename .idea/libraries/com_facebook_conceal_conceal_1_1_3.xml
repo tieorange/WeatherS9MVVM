@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.facebook.conceal:conceal-1.1.3">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/conceal-1.1.3.aar/289ea1ff12396dc19c340870965a5e9b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/conceal-1.1.3.aar/289ea1ff12396dc19c340870965a5e9b/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
