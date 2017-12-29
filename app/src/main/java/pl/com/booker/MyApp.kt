@@ -8,7 +8,6 @@ import android.os.StrictMode.ThreadPolicy.Builder
 import android.os.StrictMode.VmPolicy
 import android.support.multidex.MultiDex
 import android.support.multidex.MultiDexApplication
-import com.orhanobut.hawk.Hawk
 import io.reactivex.plugins.RxJavaPlugins
 import pl.com.booker.injection.components.AppComponent
 import pl.com.booker.injection.components.DaggerAppComponent
@@ -17,22 +16,20 @@ import pl.com.booker.injection.modules.NetModule
 import timber.log.Timber
 
 class MyApp : MultiDexApplication() {
+
     override fun onCreate() {
         super.onCreate()
         TrafficStats.setThreadStatsTag(1000)
         enableStrictMode()
 
         instance = this
+        Timber.plant(Timber.DebugTree())
         RxJavaPlugins.setErrorHandler({ Timber.e(it) })
 
         appComponent = DaggerAppComponent.builder()
                 .appModule(AppModule(this))
                 .netModule(NetModule(this))
                 .build()
-
-        Timber.plant(Timber.DebugTree())
-        Hawk.init(this).build()
-
     }
 
     override fun attachBaseContext(base: Context) {
@@ -58,7 +55,7 @@ class MyApp : MultiDexApplication() {
     }
 
     companion object {
-        val BASE_URL = ""
+        val BASE_URL = "https://41199309-bce5-4722-b287-77f1d61b140a.mock.pstmn.io/"
 
         lateinit var instance: MyApp
             private set

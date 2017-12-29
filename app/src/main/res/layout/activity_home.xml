@@ -20,6 +20,18 @@
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/outsideTemperature"
+            style="@style/insideRoomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@{String.format(@string/temperatura_format, viewModel.temperatureOutside.get())}"
+            app:layout_constraintBottom_toTopOf="@+id/windView"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Temperatura: 4* C"/>
+
+        <TextView
             android:id="@+id/textView2"
             style="@style/title"
             android:layout_marginEnd="16dp"
@@ -35,17 +47,15 @@
         <TextView
             android:id="@+id/textView"
             style="@style/title"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:text="Zewnątrz:"
-            app:layout_constraintBottom_toTopOf="@+id/windView"
+            app:layout_constraintBottom_toTopOf="@+id/outsideTemperature"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            app:layout_constraintVertical_bias="1.0"/>
+            />
 
         <com.github.ahmadnemati.wind.WindView
             android:id="@+id/windView"
@@ -71,7 +81,7 @@
             android:id="@+id/linearLayout"
             android:layout_width="304dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"

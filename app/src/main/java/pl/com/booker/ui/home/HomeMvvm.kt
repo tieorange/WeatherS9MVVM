@@ -15,6 +15,7 @@ class HomeMvvm {
         val temperatura: ObservableField<String>
         val wilogtnosc: ObservableField<String>
         val cisnienie: ObservableField<String>
+        val temperatureOutside: ObservableField<String>
     }
 
 }

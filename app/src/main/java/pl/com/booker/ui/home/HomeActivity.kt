@@ -23,8 +23,6 @@ class HomeActivity
         super.onCreate(savedInstanceState)
         activityComponent.inject(this)
         setAndBindContentView(savedInstanceState, R.layout.activity_home)
-        //        setSupportActionBar(binding.appBarContainer.toolbar)
-
     }
 
 
