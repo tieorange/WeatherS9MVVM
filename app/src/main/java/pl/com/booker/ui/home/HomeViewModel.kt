@@ -81,5 +81,4 @@ constructor(
         temperatureOutside.set(temp)
         view.weatherFetched(weather)
     }
-
 }
