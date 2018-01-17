@@ -53,17 +53,19 @@ constructor(
     }
 
     private fun processS9Weather(s9Weather: WeatherS9esponse?) {
+        val pressure = s9Weather?.kaloryfer001?.cisnienie?.toInt()?.div(100)
+
         temperatura.set(s9Weather?.kaloryfer001?.temp ?: defaultError)
-        wilogtnosc.set(s9Weather?.kaloryfer001?.wilg ?: defaultError)
-        cisnienie.set(s9Weather?.kaloryfer001?.cisnienie ?: defaultError)
+        wilogtnosc.set("${s9Weather?.kaloryfer001?.wilg} %" ?: defaultError)
+        cisnienie.set("${pressure.toString()} hPa" ?: defaultError)
     }
 
     private fun initWeather(view: View) {
         val helper = OpenWeatherMapHelper()
         helper.setApiKey((context.getString(string.OPEN_WEATHER_MAP_API_KEY)))
         helper.setUnits(Units.METRIC)
-        helper.getCurrentWeatherByGeoCoordinates(
-                52.2239, 20.9940, object : CurrentWeatherCallback {
+        helper.getCurrentWeatherByCityName(
+                "Krakow, Poland", object : CurrentWeatherCallback {
             override fun onSuccess(weather: CurrentWeather) {
                 processOutsideWeather(weather, view)
                 return
