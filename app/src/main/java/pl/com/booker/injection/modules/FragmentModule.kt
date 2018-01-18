@@ -1,13 +1,13 @@
-package pl.com.booker.injection.modules
+package pl.edu.pawelsienkiewicz.injection.modules
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import dagger.Module
 import dagger.Provides
-import pl.com.booker.injection.qualifier.ChildFragmentManager
-import pl.com.booker.injection.scopes.PerFragment
-import pl.com.booker.ui.base.navigator.ChildFragmentNavigator
-import pl.com.booker.ui.base.navigator.FragmentNavigator
+import pl.edu.pawelsienkiewicz.injection.qualifier.ChildFragmentManager
+import pl.edu.pawelsienkiewicz.injection.scopes.PerFragment
+import pl.edu.pawelsienkiewicz.ui.base.navigator.ChildFragmentNavigator
+import pl.edu.pawelsienkiewicz.ui.base.navigator.FragmentNavigator
 
 
 @Module

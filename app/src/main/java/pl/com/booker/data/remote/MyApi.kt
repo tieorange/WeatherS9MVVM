@@ -1,4 +1,4 @@
-package pl.com.booker.data.remote
+package pl.edu.pawelsienkiewicz.data.remote
 
 import io.reactivex.Single
 import retrofit2.http.GET

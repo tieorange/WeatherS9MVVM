@@ -1,9 +1,9 @@
-package pl.com.booker.ui.home
+package pl.edu.pawelsienkiewicz.ui.home
 
 import android.databinding.ObservableField
 import com.kwabenaberko.openweathermaplib.models.currentweather.CurrentWeather
-import pl.com.booker.ui.base.view.MvvmView
-import pl.com.booker.ui.base.viewmodel.MvvmViewModel
+import pl.edu.pawelsienkiewicz.ui.base.view.MvvmView
+import pl.edu.pawelsienkiewicz.ui.base.viewmodel.MvvmViewModel
 
 class HomeMvvm {
 

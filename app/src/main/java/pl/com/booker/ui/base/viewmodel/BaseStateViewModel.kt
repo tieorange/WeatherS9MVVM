@@ -12,16 +12,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License. */
 
-package pl.com.booker.ui.base.viewmodel
+package pl.edu.pawelsienkiewicz.ui.base.viewmodel
 
 import android.databinding.BaseObservable
 import android.os.Bundle
 import android.os.Parcelable
 import android.support.annotation.CallSuper
 
-import pl.com.booker.ui.base.MvvmViewNotAttachedException
-import pl.com.booker.ui.base.view.MvvmView
-import pl.com.booker.util.getParcelable
+import pl.edu.pawelsienkiewicz.ui.base.MvvmViewNotAttachedException
+import pl.edu.pawelsienkiewicz.ui.base.view.MvvmView
+import pl.edu.pawelsienkiewicz.util.getParcelable
 
 import javax.inject.Inject
 

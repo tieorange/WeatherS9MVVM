@@ -1,15 +1,15 @@
-package pl.com.booker.injection.components
+package pl.edu.pawelsienkiewicz.injection.components
 
 import android.content.Context
 import android.support.v4.app.FragmentManager
 import dagger.Component
-import pl.com.booker.injection.modules.ActivityModule
-import pl.com.booker.injection.modules.ViewModelModule
-import pl.com.booker.injection.qualifier.ActivityContext
-import pl.com.booker.injection.qualifier.ActivityFragmentManager
-import pl.com.booker.injection.scopes.PerActivity
-import pl.com.booker.ui.base.navigator.Navigator
-import pl.com.booker.ui.home.HomeActivity
+import pl.edu.pawelsienkiewicz.injection.modules.ActivityModule
+import pl.edu.pawelsienkiewicz.injection.modules.ViewModelModule
+import pl.edu.pawelsienkiewicz.injection.qualifier.ActivityContext
+import pl.edu.pawelsienkiewicz.injection.qualifier.ActivityFragmentManager
+import pl.edu.pawelsienkiewicz.injection.scopes.PerActivity
+import pl.edu.pawelsienkiewicz.ui.base.navigator.Navigator
+import pl.edu.pawelsienkiewicz.ui.home.HomeActivity
 
 
 @PerActivity

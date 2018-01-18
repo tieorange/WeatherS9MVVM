@@ -1,4 +1,4 @@
-package pl.com.booker.injection.qualifier
+package pl.edu.pawelsienkiewicz.injection.qualifier
 import javax.inject.Qualifier
 
 

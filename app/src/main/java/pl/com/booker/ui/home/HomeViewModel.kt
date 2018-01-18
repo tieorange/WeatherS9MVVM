@@ -1,4 +1,4 @@
-package pl.com.booker.ui.home
+package pl.edu.pawelsienkiewicz.ui.home
 
 import android.content.Context
 import android.databinding.ObservableField
@@ -9,13 +9,13 @@ import com.kwabenaberko.openweathermaplib.implementation.OpenWeatherMapHelper.Cu
 import com.kwabenaberko.openweathermaplib.models.currentweather.CurrentWeather
 import com.mcxiaoke.koi.ext.toast
 import io.reactivex.android.schedulers.AndroidSchedulers
-import pl.com.booker.R.string
-import pl.com.booker.data.remote.MyApi
-import pl.com.booker.data.remote.WeatherS9esponse
-import pl.com.booker.injection.qualifier.ActivityContext
-import pl.com.booker.injection.scopes.PerActivity
-import pl.com.booker.ui.base.viewmodel.RxBaseViewModel
-import pl.com.booker.ui.home.HomeMvvm.View
+import pl.edu.pawelsienkiewicz.R.string
+import pl.edu.pawelsienkiewicz.data.remote.MyApi
+import pl.edu.pawelsienkiewicz.data.remote.WeatherS9esponse
+import pl.edu.pawelsienkiewicz.injection.qualifier.ActivityContext
+import pl.edu.pawelsienkiewicz.injection.scopes.PerActivity
+import pl.edu.pawelsienkiewicz.ui.base.viewmodel.RxBaseViewModel
+import pl.edu.pawelsienkiewicz.ui.home.HomeMvvm.View
 import javax.inject.Inject
 
 @PerActivity

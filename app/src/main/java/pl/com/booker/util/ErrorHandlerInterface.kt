@@ -1,4 +1,4 @@
-package pl.com.booker.util
+package pl.edu.pawelsienkiewicz.util
 
 interface ErrorHandlerInterface {
     fun handleError(throwable: Throwable)

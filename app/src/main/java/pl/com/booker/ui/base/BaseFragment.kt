@@ -1,4 +1,4 @@
-package pl.com.booker.ui.base
+package pl.edu.pawelsienkiewicz.ui.base
 
 import android.content.Context
 import android.databinding.DataBindingUtil
@@ -14,13 +14,13 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import pl.com.booker.BR
-import pl.com.booker.injection.components.DaggerFragmentComponent
-import pl.com.booker.injection.components.FragmentComponent
-import pl.com.booker.injection.modules.FragmentModule
-import pl.com.booker.ui.base.view.MvvmView
-import pl.com.booker.ui.base.viewmodel.MvvmViewModel
-import pl.com.booker.ui.base.viewmodel.NoOpViewModel
+import pl.edu.pawelsienkiewicz.BR
+import pl.edu.pawelsienkiewicz.injection.components.DaggerFragmentComponent
+import pl.edu.pawelsienkiewicz.injection.components.FragmentComponent
+import pl.edu.pawelsienkiewicz.injection.modules.FragmentModule
+import pl.edu.pawelsienkiewicz.ui.base.view.MvvmView
+import pl.edu.pawelsienkiewicz.ui.base.viewmodel.MvvmViewModel
+import pl.edu.pawelsienkiewicz.ui.base.viewmodel.NoOpViewModel
 import javax.inject.Inject
 
 abstract class BaseFragment<B : ViewDataBinding, V : MvvmView, VM : MvvmViewModel<V>> : Fragment() {

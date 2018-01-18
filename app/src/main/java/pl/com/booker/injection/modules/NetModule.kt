@@ -1,4 +1,4 @@
-package pl.com.booker.injection.modules
+package pl.edu.pawelsienkiewicz.injection.modules
 
 import android.content.Context
 import com.google.gson.Gson
@@ -9,11 +9,11 @@ import dagger.Provides
 import io.reactivex.schedulers.Schedulers
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import pl.com.booker.BuildConfig
-import pl.com.booker.MyApp
-import pl.com.booker.data.remote.MyApi
-import pl.com.booker.injection.qualifier.AppContext
-import pl.com.booker.injection.scopes.PerApplication
+import pl.edu.pawelsienkiewicz.BuildConfig
+import pl.edu.pawelsienkiewicz.MyApp
+import pl.edu.pawelsienkiewicz.data.remote.MyApi
+import pl.edu.pawelsienkiewicz.injection.qualifier.AppContext
+import pl.edu.pawelsienkiewicz.injection.scopes.PerApplication
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,10 +1,10 @@
-package pl.com.booker.util
+package pl.edu.pawelsienkiewicz.util
 
 import android.content.Context
 import com.mcxiaoke.koi.ext.toast
-import pl.com.booker.R
-import pl.com.booker.injection.scopes.PerActivity
-import pl.com.booker.ui.base.navigator.Navigator
+import pl.edu.pawelsienkiewicz.R
+import pl.edu.pawelsienkiewicz.injection.scopes.PerActivity
+import pl.edu.pawelsienkiewicz.ui.base.navigator.Navigator
 import retrofit2.HttpException
 import java.net.UnknownHostException
 import javax.inject.Inject

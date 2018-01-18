@@ -1,4 +1,4 @@
-package pl.com.booker.util
+package pl.edu.pawelsienkiewicz.util
 
 import com.google.gson.stream.JsonReader
 import com.google.gson.stream.JsonToken

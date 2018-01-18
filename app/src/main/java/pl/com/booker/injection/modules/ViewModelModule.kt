@@ -1,10 +1,10 @@
-package pl.com.booker.injection.modules
+package pl.edu.pawelsienkiewicz.injection.modules
 
 
 import dagger.Binds
 import dagger.Module
-import pl.com.booker.ui.home.HomeMvvm
-import pl.com.booker.ui.home.HomeViewModel
+import pl.edu.pawelsienkiewicz.ui.home.HomeMvvm
+import pl.edu.pawelsienkiewicz.ui.home.HomeViewModel
 
 
 @Module

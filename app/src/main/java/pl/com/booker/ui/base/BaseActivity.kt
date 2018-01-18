@@ -1,4 +1,4 @@
-package pl.com.booker.ui.base
+package pl.edu.pawelsienkiewicz.ui.base
 
 import android.databinding.DataBindingUtil
 import android.databinding.ViewDataBinding
@@ -11,14 +11,14 @@ import android.support.annotation.LayoutRes
 import android.support.annotation.StringRes
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
-import pl.com.booker.BR
-import pl.com.booker.MyApp
-import pl.com.booker.injection.components.ActivityComponent
-import pl.com.booker.injection.components.DaggerActivityComponent
-import pl.com.booker.injection.modules.ActivityModule
-import pl.com.booker.ui.base.view.MvvmView
-import pl.com.booker.ui.base.viewmodel.MvvmViewModel
-import pl.com.booker.ui.base.viewmodel.NoOpViewModel
+import pl.edu.pawelsienkiewicz.BR
+import pl.edu.pawelsienkiewicz.MyApp
+import pl.edu.pawelsienkiewicz.injection.components.ActivityComponent
+import pl.edu.pawelsienkiewicz.injection.components.DaggerActivityComponent
+import pl.edu.pawelsienkiewicz.injection.modules.ActivityModule
+import pl.edu.pawelsienkiewicz.ui.base.view.MvvmView
+import pl.edu.pawelsienkiewicz.ui.base.viewmodel.MvvmViewModel
+import pl.edu.pawelsienkiewicz.ui.base.viewmodel.NoOpViewModel
 import javax.inject.Inject
 
 /* Base class for Activities when using a view model with data binding.

@@ -1,4 +1,4 @@
-package pl.com.booker.util.extensions
+package pl.edu.pawelsienkiewicz.util.extensions
 
 import java.util.*
 import java.util.concurrent.TimeUnit

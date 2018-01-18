@@ -1,13 +1,13 @@
-package pl.com.booker.injection.modules
+package pl.edu.pawelsienkiewicz.injection.modules
 
 import android.app.Application
 import android.content.Context
 import android.content.res.Resources
 import dagger.Module
 import dagger.Provides
-import pl.com.booker.injection.qualifier.AppContext
-import pl.com.booker.injection.scopes.PerApplication
-import pl.com.booker.util.LoginManager
+import pl.edu.pawelsienkiewicz.injection.qualifier.AppContext
+import pl.edu.pawelsienkiewicz.injection.scopes.PerApplication
+import pl.edu.pawelsienkiewicz.util.LoginManager
 
 
 /* Copyright 2016 Patrick Löwenstein

@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License. */
 
-package pl.com.booker.ui.base.validation
+package pl.edu.pawelsienkiewicz.ui.base.validation
 
 import io.reactivex.Completable
 

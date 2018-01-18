@@ -1,8 +1,8 @@
-package pl.com.booker.ui.base.viewmodel
+package pl.edu.pawelsienkiewicz.ui.base.viewmodel
 
 import android.support.v7.widget.RecyclerView
 
-import pl.com.booker.ui.base.view.MvvmView
+import pl.edu.pawelsienkiewicz.ui.base.view.MvvmView
 
 
 interface AdapterMvvmViewModel<V : MvvmView> : MvvmViewModel<V> {

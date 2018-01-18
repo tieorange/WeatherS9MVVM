@@ -1,7 +1,7 @@
-package pl.com.booker.util
+package pl.edu.pawelsienkiewicz.util
 
 import android.content.Context
-import pl.com.booker.data.remote.MyApi
+import pl.edu.pawelsienkiewicz.data.remote.MyApi
 
 class FirebaseTokenHelper(
         private val context: Context,

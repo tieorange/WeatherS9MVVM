@@ -12,6 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License. */
 
-package pl.com.booker.ui.base
+package pl.edu.pawelsienkiewicz.ui.base
 
 class MvvmViewNotAttachedException : RuntimeException("Please call ViewModel.attachView(MvvmView) before requesting data to the ViewModel")

@@ -1,4 +1,4 @@
-package pl.com.booker.injection.modules
+package pl.edu.pawelsienkiewicz.injection.modules
 
 import dagger.Module
 

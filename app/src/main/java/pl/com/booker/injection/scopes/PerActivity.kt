@@ -1,4 +1,4 @@
-package pl.com.booker.injection.scopes
+package pl.edu.pawelsienkiewicz.injection.scopes
 
 
 import javax.inject.Scope

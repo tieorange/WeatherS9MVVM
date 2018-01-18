@@ -1,4 +1,4 @@
-package pl.com.booker.util.bindingadapter
+package pl.edu.pawelsienkiewicz.util.bindingadapter
 
 
 object BindingAdapters {

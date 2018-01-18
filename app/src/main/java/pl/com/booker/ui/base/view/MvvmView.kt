@@ -1,4 +1,4 @@
-package pl.com.booker.ui.base.view
+package pl.edu.pawelsienkiewicz.ui.base.view
 
 
 interface MvvmView

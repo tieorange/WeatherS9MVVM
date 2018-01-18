@@ -1,9 +1,9 @@
-package pl.com.booker.util
+package pl.edu.pawelsienkiewicz.util
 
 import android.support.v4.app.FragmentActivity
-import pl.com.booker.MyApp
-import pl.com.booker.data.remote.MyApi
-import pl.com.booker.ui.base.navigator.ActivityNavigator
+import pl.edu.pawelsienkiewicz.MyApp
+import pl.edu.pawelsienkiewicz.data.remote.MyApi
+import pl.edu.pawelsienkiewicz.ui.base.navigator.ActivityNavigator
 
 class ApiServiceSingleton
 private constructor(

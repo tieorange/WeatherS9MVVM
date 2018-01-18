@@ -1,10 +1,10 @@
-package pl.com.booker.ui.base.viewmodel
+package pl.edu.pawelsienkiewicz.ui.base.viewmodel
 
 import android.databinding.BaseObservable
 import android.os.Bundle
 import android.support.annotation.CallSuper
-import pl.com.booker.ui.base.MvvmViewNotAttachedException
-import pl.com.booker.ui.base.view.MvvmView
+import pl.edu.pawelsienkiewicz.ui.base.MvvmViewNotAttachedException
+import pl.edu.pawelsienkiewicz.ui.base.view.MvvmView
 
 
 /**

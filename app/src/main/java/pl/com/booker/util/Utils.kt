@@ -1,4 +1,4 @@
-package pl.com.booker.util
+package pl.edu.pawelsienkiewicz.util
 
 import android.content.Context
 import android.content.ContextWrapper

@@ -1,9 +1,9 @@
-package pl.com.booker.injection.components
+package pl.edu.pawelsienkiewicz.injection.components
 
 import dagger.Component
-import pl.com.booker.injection.modules.ViewModelModule
-import pl.com.booker.injection.modules.ViewHolderModule
-import pl.com.booker.injection.scopes.PerViewHolder
+import pl.edu.pawelsienkiewicz.injection.modules.ViewModelModule
+import pl.edu.pawelsienkiewicz.injection.modules.ViewHolderModule
+import pl.edu.pawelsienkiewicz.injection.scopes.PerViewHolder
 
 
 @PerViewHolder

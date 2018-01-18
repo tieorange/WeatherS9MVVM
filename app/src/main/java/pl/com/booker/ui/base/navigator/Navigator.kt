@@ -1,4 +1,4 @@
-package pl.com.booker.ui.base.navigator
+package pl.edu.pawelsienkiewicz.ui.base.navigator
 
 import android.app.Activity
 import android.content.Intent

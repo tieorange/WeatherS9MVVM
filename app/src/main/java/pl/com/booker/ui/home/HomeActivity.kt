@@ -1,4 +1,4 @@
-package pl.com.booker.ui.home
+package pl.edu.pawelsienkiewicz.ui.home
 
 import android.content.Context
 import android.content.Intent
@@ -7,9 +7,9 @@ import android.view.Menu
 import android.view.MenuItem
 import com.kwabenaberko.openweathermaplib.models.currentweather.CurrentWeather
 import kotlinx.android.synthetic.main.activity_home.windView
-import pl.com.booker.R
-import pl.com.booker.databinding.ActivityHomeBinding
-import pl.com.booker.ui.base.BaseActivity
+import pl.edu.pawelsienkiewicz.R
+import pl.edu.pawelsienkiewicz.databinding.ActivityHomeBinding
+import pl.edu.pawelsienkiewicz.ui.base.BaseActivity
 
 class HomeActivity
     : BaseActivity<

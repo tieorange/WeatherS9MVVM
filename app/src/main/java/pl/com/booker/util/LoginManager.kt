@@ -1,9 +1,9 @@
-package pl.com.booker.util
+package pl.edu.pawelsienkiewicz.util
 
 import android.app.Activity
 import com.orhanobut.hawk.Hawk
-import pl.com.booker.MyApp
-import pl.com.booker.injection.scopes.PerApplication
+import pl.edu.pawelsienkiewicz.MyApp
+import pl.edu.pawelsienkiewicz.injection.scopes.PerApplication
 import javax.inject.Inject
 
 @PerApplication

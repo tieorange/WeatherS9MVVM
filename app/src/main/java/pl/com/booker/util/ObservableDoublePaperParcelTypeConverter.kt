@@ -1,4 +1,4 @@
-package pl.com.booker.util
+package pl.edu.pawelsienkiewicz.util
 
 import android.databinding.ObservableDouble
 import android.os.Parcel

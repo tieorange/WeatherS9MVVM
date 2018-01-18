@@ -1,4 +1,4 @@
-package pl.com.booker
+package pl.edu.pawelsienkiewicz
 
 import android.content.Context
 import android.content.res.Resources
@@ -9,10 +9,10 @@ import android.os.StrictMode.VmPolicy
 import android.support.multidex.MultiDex
 import android.support.multidex.MultiDexApplication
 import io.reactivex.plugins.RxJavaPlugins
-import pl.com.booker.injection.components.AppComponent
-import pl.com.booker.injection.components.DaggerAppComponent
-import pl.com.booker.injection.modules.AppModule
-import pl.com.booker.injection.modules.NetModule
+import pl.edu.pawelsienkiewicz.injection.components.AppComponent
+import pl.edu.pawelsienkiewicz.injection.components.DaggerAppComponent
+import pl.edu.pawelsienkiewicz.injection.modules.AppModule
+import pl.edu.pawelsienkiewicz.injection.modules.NetModule
 import timber.log.Timber
 
 class MyApp : MultiDexApplication() {

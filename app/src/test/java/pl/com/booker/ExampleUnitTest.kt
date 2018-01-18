@@ -1,4 +1,4 @@
-package pl.com.booker
+package pl.edu.pawelsienkiewicz
 
 import org.junit.Test
 

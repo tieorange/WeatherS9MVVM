@@ -12,10 +12,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License. */
 
-package pl.com.booker.ui.base.viewmodel
+package pl.edu.pawelsienkiewicz.ui.base.viewmodel
 
 import android.os.Parcelable
-import pl.com.booker.ui.base.view.MvvmView
+import pl.edu.pawelsienkiewicz.ui.base.view.MvvmView
 import io.reactivex.disposables.CompositeDisposable
 
 abstract class RxBaseStateViewModel<T : MvvmView, S : Parcelable> : BaseStateViewModel<T, S>() {

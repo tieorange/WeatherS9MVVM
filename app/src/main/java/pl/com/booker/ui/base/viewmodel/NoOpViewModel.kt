@@ -1,9 +1,9 @@
-package pl.com.booker.ui.base.viewmodel
+package pl.edu.pawelsienkiewicz.ui.base.viewmodel
 
 import android.databinding.BaseObservable
 import android.os.Bundle
 
-import pl.com.booker.ui.base.view.MvvmView
+import pl.edu.pawelsienkiewicz.ui.base.view.MvvmView
 
 import javax.inject.Inject
 

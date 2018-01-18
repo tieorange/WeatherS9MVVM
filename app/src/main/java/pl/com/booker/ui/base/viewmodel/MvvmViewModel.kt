@@ -1,8 +1,8 @@
-package pl.com.booker.ui.base.viewmodel
+package pl.edu.pawelsienkiewicz.ui.base.viewmodel
 
 import android.databinding.Observable
 import android.os.Bundle
-import pl.com.booker.ui.base.view.MvvmView
+import pl.edu.pawelsienkiewicz.ui.base.view.MvvmView
 
 /* Copyright 2016 Patrick Löwenstein
  *
