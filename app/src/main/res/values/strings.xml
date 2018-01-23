@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Booker</string>
+    <string name="app_name">S9Weather</string>
     <string name="action_settings">Settings</string>
     <string name="yes">Tak</string>
     <string name="no">Nie</string>
@@ -10,6 +10,6 @@
     <string name="server_not_responding">Serwer nie odpowiada</string>
     <string name="OPEN_WEATHER_MAP_API_KEY">9e6f5a8071bf967c938e41877d120727</string>
     <string name="temperatura_format">Temperatura %s °C</string>
-    <string name="wilgotnosc_format">Wilgotność %s</string>
+    <string name="wilgotnosc_format">Wilgotność %s</string>;
     <string name="cisnienie_format">Ciśnienie %s</string>
 </resources>
