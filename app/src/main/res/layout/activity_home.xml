@@ -57,7 +57,7 @@
 
         <com.github.ahmadnemati.wind.WindView
             android:id="@+id/windView"
-            android:layout_width="348dp"
+            android:layout_width="0dp"
             android:layout_height="203dp"
             app:barometerTickSpacing="9dp"
             app:bigPoleX="38dp"
@@ -135,10 +135,10 @@
             android:id="@+id/imageView4"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_confstraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
             app:srcCompat="@drawable/ic_temperature"/>
 
         <ImageView
